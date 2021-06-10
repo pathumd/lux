@@ -1,0 +1,1297 @@
+/*Fonts */
+
+@font-face {
+
+    font-family: 'Brandon Grotesque';
+    src: url(fonts/Brandon_blk.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+
+    font-family: 'Brandon Grotesque';
+    src: url(fonts/Brandon_bld.otf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+
+    font-family: 'Brandon Grotesque';
+    src: url(fonts/Brandon_reg.otf);
+    font-style: normal;
+    font-weight: 100;
+
+}
+
+
+/*General and header styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: #AE90E6;
+}
+
+
+h1 {
+    font-family: "Brandon Grotesque";
+    font-weight: 300;
+}
+
+h2 {
+    font-family: "Brandon Grotesque";
+    font-weight: 200;
+    color: #edf0f1;
+    font-size: 35px;
+}
+
+
+/*Navigation */
+
+li, p, a, button {
+    font-family: "Brandon Grotesque";
+    font-weight: 100;
+}
+
+
+li, a, button {
+
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+a {
+    font-weight: 200;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(140, 82, 255, 1);
+}
+
+
+/*Landing area */
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+
+.mainh1 {
+
+    font-size: 110px;
+    color: #edf0f1;
+    text-transform: uppercase;
+}
+
+.subtitle {
+
+    font-size: 25px;
+    color: #edf0f1;
+    padding-bottom: 45px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.8s;
+}
+
+.splash_intro {
+
+    position: absolute;
+    left: 420px;
+    top: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+#join {
+    padding: 15px 45px;
+    background-color: rgba(140, 82, 255, 1);
+    font-weight: 200;
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 2.3s;
+}
+
+#join:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    background-color: rgb(150, 97, 255);
+}
+
+.discord_logo {
+    position: relative;
+    float: left;
+    width: 18px;
+    right: 10px;
+    top: 6px;
+}
+
+.divider {
+
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
+
+#sign_up {
+    padding: 15px 45px;
+    border: 2px solid #8C52FF;
+    background-color: rgba(174, 144, 230, 1);
+    font-weight: 200;
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 2.8s;
+
+}
+
+#sign_up:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border: 2px solid rgb(150, 97, 255);;
+}
+
+
+.character {
+    position: relative;
+    z-index: 2;
+    left: 800px;
+    padding-top: 70px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.3s;
+}
+
+
+.circle {
+    position: absolute;
+    top: 100px;
+    left: 1150px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.circle_container {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.3s;
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.wavy_pattern {
+    position: absolute;
+    transform: scale(0.9);
+    z-index: -2;
+    top: -70px;
+    left: 650px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.3s;
+
+}
+
+
+/*Intro Section 1*/
+
+.first_intro p {
+    padding-top: 30px;
+    color: #edf0f1;
+    font-size: 20px;
+}
+
+.first_intro img {
+    position: relative;
+    left: 650px;
+    top: -370px;
+    padding: 0;
+}
+
+.first_intro {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1140px;
+    height: 400px;
+    padding-top: 80px;
+    margin-top: 200px;
+    padding-bottom: 0px;
+}
+
+
+/*Intro Section 2*/
+
+.second_intro {
+    margin-top: 200px;
+}
+
+.second_intro h2 {
+    text-align: center;
+}
+
+
+.p_container {
+    text-align: justify;
+}
+
+.p_container p {
+    text-align: center;
+    color: #edf0f1;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*Projects Section*/
+
+.projects_intro {
+    margin-top: 200px;
+}
+.projects_intro h2 {
+    text-align: center;
+}
+
+
+    /*Project 1*/
+
+.project1info p {
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+.mcmasterlux {
+    padding-bottom: 20px;
+}
+
+.luxpod_header {
+    color: #2C2C2C;
+    font-size: 35px;
+}
+
+.luxpoint1 {
+    padding-top: 20px;
+}
+
+.luxpoint2 {
+    padding-top: 20px;
+}
+
+.luxpoint3 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#spotify {
+    padding: 15px 35px;
+    background-color: rgba(140, 82, 255, 1);
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#spotify:hover {
+    background-color: rgb(150, 97, 255);
+}
+
+#applemusic {
+    padding: 15px 35px;
+    background-color: rgba(140, 82, 255, 1);
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#applemusic:hover {
+    background-color: rgb(150, 97, 255);
+}
+
+.divider2 {
+
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
+
+
+.project1info {
+    position: relative;
+    left: 45px;
+    top: -530px;
+}
+
+.project1_container {
+    overflow: hidden;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 675px;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.project1_container:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+    /*Project 2*/
+
+.project2info p {
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+.carletonlux {
+    padding-bottom: 20px;
+}
+
+.cad_header {
+    color: #2C2C2C;
+    font-size: 35px;
+}
+
+.cadpoint1 {
+    padding-top: 20px;
+}
+
+.cadpoint2 {
+    padding-top: 20px;
+}
+
+.cadpoint3 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#viewmore {
+    padding: 15px 35px;
+    background-color: rgba(140, 82, 255, 1);
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+    color: #edf0f1;
+}
+
+#viewmore:hover {
+    background-color: rgb(150, 97, 255);
+}
+
+
+.project2info {
+    position: relative;
+
+    left: 45px;
+    top: -530px;
+}
+
+.project2_container {
+    overflow: hidden;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 675px;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.project2_container:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+
+    /*Project 3*/
+
+.project3info p {
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+.uottawalux {
+    padding-bottom: 20px;
+}
+
+.minecraft_header {
+    color: #2C2C2C;
+    font-size: 35px;
+}
+
+.mcpoint1 {
+    padding-top: 20px;
+}
+
+.mcpoint2 {
+    padding-top: 20px;
+}
+
+.mcpoint3 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.project3info {
+    position: relative;
+
+    left: 45px;
+    top: -530px;
+}
+
+.project3_container {
+    overflow-y: hidden;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 670px;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.project3_container:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+
+.divider3 {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.divider4 {
+    height: 90px;
+    margin: 0 auto;
+}
+/*Conclusion*/
+
+.header_container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 275px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+#conclusion_header {
+    position: relative;
+    text-align: center;
+}
+
+.img_container {
+    position: relative;
+    top: -110px;
+}
+
+.conclusion_btn {
+    width: 150px;
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+}
+
+
+/*Footer*/
+
+footer {
+    background: rgb(140, 82, 255);
+}
+
+.container {
+    color: #fff;
+}
+
+.divider5 {
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.icon_container {
+    padding-top: 30px;
+}
+
+.icon_container i {
+    cursor: pointer;
+}
+
+#footer_header {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+
+/*Media Queries for different viewports*/
+
+
+/*Mobile*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    header {
+        padding: 30px 4%;
+    }
+
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    .splash_intro {
+        overflow: hidden;
+        left: 38px;
+        top: 190px;
+    }
+
+    .mainh1 {
+        font-size: 107px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        font-size: 16px;
+    }
+
+    .discord_logo {
+        position: relative;
+        top: 5px;
+        width: 16px;
+    }
+
+    #sign_up {
+        font-size: 16px;
+    }
+    .character {
+        width: fit-content;
+        width: -moz-fit-content;
+        height: fit-content;
+        height: -moz-fit-content;
+        overflow: hidden;
+        transform: scale(0.4);
+        left: -205px;
+        top: 250px;
+    }
+
+    .wavy_pattern {
+        overflow: hidden;
+        display: none;
+    }
+
+    .circle_container {
+        overflow: hidden;
+        transform: scale(0.4);
+    }
+
+    .circle {
+        left: -25px;
+        top: 380px;
+    }
+
+    .first_intro {
+        position: relative;
+        margin-top: 100px;
+        left: -90px;
+    }
+
+    .first_intro img {
+        display: none;
+    }
+
+    .fi_text_container {
+        position: relative;
+        left: 150px;
+    }
+
+    .fi_text_container p {
+        font-size: 18px;
+    }
+
+    .fi_text_container h2 {
+        font-size: 30px;
+    }
+
+    .second_intro p {
+        font-size: 18px;
+    }
+
+    .second_intro h2 {
+        font-size: 30px;
+    }
+
+    .second_intro {
+        margin-top: 150px;
+    }
+
+    .projects_intro h2 {
+        font-size: 30px;
+    }
+
+    .projects_intro {
+        position: relative;
+        margin-top: 180px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    #spotify {
+        margin-bottom: 30px;
+    }
+    .divider3 {
+        height: 0px;
+    }
+
+    .divider4 {
+        height: 60px;
+    }
+  
+    .project1_container {
+        width: 85%;
+    }
+
+    .project2_container {
+        width: 85%;
+    }
+
+    .project3_container {
+        width: 85%;
+    }
+
+    .conclusion_btn {
+        position: relative;
+        top: -25px;
+        padding-top: 30px;
+        padding-bottom: 180px;
+    }
+
+    .header_container {
+        padding-top: 150px;
+        width: 50%;
+    }
+
+    .img_container {
+        display: none;
+    }
+
+    .divider5 {
+        height: 0px;
+    }
+
+    #conclusion_header {
+        font-size: 30px;
+    }
+
+    #footer_header {
+        font-size: 30px;
+    }
+
+  }
+
+
+/*Mobile/Tablet*/
+
+@media only screen and (min-width: 360px) and (max-width: 765px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 30px 4%;
+    }
+
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    .splash_intro {
+        overflow: hidden !important;
+        left: 38px;
+        top: 190px;
+    }
+    .illustration {
+        overflow: hidden !important;
+    }
+
+    .mainh1 {
+        font-size: 107px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        font-size: 16px;
+    }
+
+    .discord_logo {
+        position: relative;
+        top: 5px;
+        width: 16px;
+    }
+
+    #sign_up {
+        font-size: 16px;
+    }
+    .character {
+        width: fit-content;
+        width: -moz-fit-content;
+        height: fit-content;
+        height: -moz-fit-content;
+        overflow: hidden !important;
+        transform: scale(0.4);
+        left: -205px;
+        top: 250px;
+    }
+
+    .wavy_pattern {
+        overflow: hidden;
+        display: none;
+    }
+
+    .circle_container {
+        overflow: hidden;
+        transform: scale(0.4);
+    }
+
+    .circle {
+        left: -25px;
+        top: 380px;
+    }
+
+    .first_intro {
+        position: relative;
+        margin-top: 100px;
+        left: -90px;
+    }
+
+    .first_intro img {
+        display: none;
+    }
+
+    .fi_text_container {
+        position: relative;
+        left: 150px;
+    }
+
+    .fi_text_container p {
+        font-size: 18px;
+    }
+
+    .fi_text_container h2 {
+        font-size: 30px;
+    }
+
+    .second_intro p {
+        font-size: 18px;
+    }
+
+    .second_intro h2 {
+        font-size: 30px;
+    }
+
+    .second_intro {
+        margin-top: 150px;
+    }
+
+    .projects_intro h2 {
+        font-size: 30px;
+    }
+
+    .projects_intro {
+        position: relative;
+        margin-top: 180px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    #spotify {
+        margin-bottom: 30px;
+    }
+    .divider3 {
+        height: 0px;
+    }
+
+    .divider4 {
+        height: 60px;
+    }
+  
+    .project1_container {
+        width: 85%;
+    }
+
+    .project2_container {
+        width: 85%;
+    }
+
+    .project3_container {
+        width: 85%;
+    }
+
+    .conclusion_btn {
+        position: relative;
+        top: -25px;
+        padding-top: 30px;
+        padding-bottom: 180px;
+    }
+
+    .header_container {
+        padding-top: 150px;
+        width: 50%;
+    }
+
+    .img_container {
+        display: none;
+    }
+
+    .divider5 {
+        height: 0px;
+    }
+
+    #conclusion_header {
+        font-size: 30px;
+    }
+
+    #footer_header {
+        font-size: 30px;
+    }
+
+  }
+
+
+/*Tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .splash_intro {
+        left: 180px;
+        top: 235px;
+    }
+
+    .mainh1 {
+        font-size: 107px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        font-size: 16px;
+    }
+
+    .discord_logo {
+        position: relative;
+        top: 5px;
+        width: 16px;
+    }
+
+    #sign_up {
+        font-size: 16px;
+    }
+    .character {
+        transform: scale(0.75);
+        left: 380px;
+        top: -100px;
+    }
+
+    .wavy_pattern {
+        transform: scale(0.75);
+        left: 240px;
+        top: -105px;
+    }
+
+    .circle {
+        transform: scale(0.4);
+        left: 620px;
+        top: 40px;
+    }
+
+    .first_intro {
+        margin-top: 0px;
+    }
+
+    .first_intro img {
+        transform: scale(0.85);
+        left: 585px;
+    }
+
+    .fi_text_container {
+        position: relative;
+        left: 150px;
+    }
+
+    .fi_text_container p {
+        font-size: 18px;
+    }
+
+    .fi_text_container h2 {
+        font-size: 30px;
+    }
+
+    .second_intro p {
+        font-size: 18px;
+    }
+
+    .second_intro h2 {
+        font-size: 30px;
+    }
+
+    .second_intro {
+        margin-top: 150px;
+    }
+
+    .projects_intro h2 {
+        font-size: 30px;
+    }
+
+    .projects_intro {
+        position: relative;
+        margin-top: 180px;
+        top: 35px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .project1_container {
+        transform: scale(0.75);
+    }
+
+    .luxpoint1, .luxpoint2, .luxpoint3 {
+        font-size: 16px;
+    }
+    .project2_container {
+        transform: scale(0.75);
+    }
+
+    .project3_container {
+        transform: scale(0.75);
+    }
+
+    .divider3 {
+        height: 0px;
+    }
+
+    .divider4 {
+        height: 5px;
+    }
+
+    .conclusion_btn {
+        position: relative;
+        top: -20px;
+        padding-top: 0px;
+        padding-bottom: 180px;
+    }
+
+    .img_container {
+        transform: scale(0.9);
+    }
+
+    .header_container {
+        padding-top: 150px;
+    }
+
+    .divider5 {
+        height: 0px;
+    }
+
+    #conclusion_header {
+        font-size: 30px;
+    }
+
+    #footer_header {
+        font-size: 30px;
+    }
+
+  }
+
+  
+/*Laptop*/
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+    .splash_intro {
+        left: 180px;
+        top: 235px;
+    }
+
+    .mainh1 {
+        font-size: 107px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        font-size: 16px;
+    }
+
+    .discord_logo {
+        position: relative;
+        top: 5px;
+        width: 16px;
+    }
+
+    #sign_up {
+        font-size: 16px;
+    }
+    .character {
+        transform: scale(0.75);
+        left: 380px;
+        top: -100px;
+    }
+
+    .wavy_pattern {
+        transform: scale(0.75);
+        left: 240px;
+        top: -105px;
+    }
+
+    .circle {
+        transform: scale(0.4);
+        left: 620px;
+        top: 40px;
+    }
+
+    .first_intro {
+        margin-top: 0px;
+    }
+
+    .first_intro img {
+        transform: scale(0.85);
+        left: 585px;
+    }
+
+    .fi_text_container {
+        position: relative;
+        left: 150px;
+    }
+
+    .fi_text_container p {
+        font-size: 18px;
+    }
+
+    .fi_text_container h2 {
+        font-size: 30px;
+    }
+
+    .second_intro p {
+        font-size: 18px;
+    }
+
+    .second_intro h2 {
+        font-size: 30px;
+    }
+
+    .second_intro {
+        margin-top: 150px;
+    }
+
+    .projects_intro h2 {
+        font-size: 30px;
+    }
+
+    .projects_intro {
+        position: relative;
+        margin-top: 180px;
+        top: 35px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .project1_container {
+        transform: scale(0.75);
+    }
+
+    .luxpoint1, .luxpoint2, .luxpoint3 {
+        font-size: 16px;
+    }
+    .project2_container {
+        transform: scale(0.75);
+    }
+
+    .project3_container {
+        transform: scale(0.75);
+    }
+
+    .divider3 {
+        height: 0px;
+    }
+
+    .divider4 {
+        height: 5px;
+    }
+
+    .conclusion_btn {
+        position: relative;
+        top: -80px;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .img_container {
+        transform: scale(0.9);
+    }
+
+    .header_container {
+        padding-top: 105px;
+    }
+
+    .divider5 {
+        height: 0px;
+    }
+
+    #conclusion_header {
+        font-size: 30px;
+    }
+
+    #footer_header {
+        font-size: 30px;
+    }
+
+  }
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 1370px) and (max-width: 1630px) {
+
+    .splash_intro {
+        left: 250px;
+        top: 280px;
+    }
+
+    .mainh1 {
+        font-size: 107px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    #join {
+        font-size: 16px;
+    }
+
+    .discord_logo {
+        position: relative;
+        top: 5px;
+        width: 16px;
+    }
+
+    #sign_up {
+        font-size: 16px;
+    }
+    .character {
+        transform: scale(0.8);
+        left: 495px;
+        top: -50px;
+    }
+
+    .wavy_pattern {
+        transform: scale(0.8);
+        left: 355px;
+    }
+
+    .circle {
+        transform: scale(0.7);
+        left: 755px;
+    }
+
+    .first_intro img {
+        transform: scale(0.9);
+    }
+
+    .fi_text_container {
+        position: relative;
+        left: 100px;
+    }
+
+    .project1_container {
+        transform: scale(0.8);
+    }
+
+    .project2_container {
+        transform: scale(0.8);
+    }
+
+    .project3_container {
+        transform: scale(0.8);
+    }
+
+    .divider3 {
+        height: 0px;
+    }
+
+    .divider4 {
+        height: 10px;
+    }
+}
