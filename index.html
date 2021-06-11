@@ -11,8 +11,12 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+    
     <!--Music for Website-->
-    <audio src="/music.mp3" autoplay loop></audio>
+    <audio controls autoplay hidden loop preload>
+        <source src="music.mp3" type="audio/mp3"/>
+        <source src="music.ogg" type="audio/ogg"/>
+    </audio>
 
     <!--Navigation-->
     <section id="nav">
