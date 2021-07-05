@@ -57,6 +57,9 @@ h2 {
     font-size: 35px;
 }
 
+audio {
+    display: none;
+}
 
 /*Navigation */
 
@@ -513,6 +516,54 @@ button:hover {
 }
 
 
+    /*Project 4*/
+
+    .project4info p {
+        color: #2C2C2C;
+        font-size: 16px;
+    }
+
+    .dv_header {
+        color: #2C2C2C;
+        font-size: 35px;
+    }
+    
+    .dvpoint1 {
+        padding-top: 20px;
+    }
+    
+    .dvpoint2 {
+        padding-top: 20px;
+    }
+    
+    .dvpoint3 {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    
+    .project4info {
+        position: relative;
+    
+        left: 45px;
+        top: -530px;
+    }
+    
+    .project4_container {
+        overflow-y: hidden;
+        cursor: pointer;
+        width: fit-content;
+        width: -moz-fit-content;
+        height: 670px;
+        margin: 0 auto;
+        border-radius: 30px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .project4_container:hover {
+        box-shadow: 0 0 15px rgba(33,33,33,.2);
+    }
+
+
 .divider3 {
     height: 50px;
     margin: 0 auto;
@@ -522,6 +573,8 @@ button:hover {
     height: 90px;
     margin: 0 auto;
 }
+
+
 /*Conclusion*/
 
 .header_container {
@@ -722,6 +775,10 @@ footer {
         width: 85%;
     }
 
+    .project4_container {
+        width: 85%;
+    }
+
     .conclusion_btn {
         position: relative;
         top: -25px;
@@ -895,6 +952,10 @@ footer {
         width: 85%;
     }
 
+    .project4_container {
+        width: 85%;
+    }
+
     .conclusion_btn {
         position: relative;
         top: -25px;
@@ -1032,6 +1093,10 @@ footer {
     }
 
     .project3_container {
+        transform: scale(0.75);
+    }
+
+    .project4_container {
         transform: scale(0.75);
     }
 
@@ -1182,6 +1247,10 @@ footer {
         transform: scale(0.75);
     }
 
+    .project4_container {
+        transform: scale(0.75);
+    }
+
     .divider3 {
         height: 0px;
     }
@@ -1284,6 +1353,10 @@ footer {
     }
 
     .project3_container {
+        transform: scale(0.8);
+    }
+
+    .project4_container {
         transform: scale(0.8);
     }
 

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lux | Data Visualization</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.19.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.15.1"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+
+  <body>
+    <div id="parentVisDiv">
+    <div id="visDiv"></div>
+    </div>
+      <div id = "animDiv"></div>
+      <div id = "animDiv2"></div>
+
+    <script type="text/javascript">
+
+      var dataVis = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "params": [
+    {
+      "name": "AgeGroups",
+       "resolve" : "global",
+      "value": "18-34",
+      "width" : "200",
+      "height" : "200",
+      "bind": {
+        "input": "select",
+        "options": [
+          "12-17",
+          "18-34",
+          "35-49",
+          "50-64",
+          "65+"
+
+        ]
+      },
+    },
+    {
+      "name": "Sex",
+       "resolve" : "global",
+      "value": "Male",
+      "width" : "200",
+      "height" : "200",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "Male",
+          "Female",
+          "Both"
+        ]
+      },
+    },
+  ],
+
+"width": 720,
+"height":350,
+
+"data": {
+ "url": "luxData.json"
+},
+
+"transform" :[{
+  "flatten" : ["Values","Mental_Health_Perception"]
+},{
+"filter" : {
+  "and":[{
+  "field" : "AgeGroup",
+  "oneOf" : [{"expr" : "AgeGroups"}]},
+  {
+    "field" : "Gender",
+    "oneOf" : [{"expr" : "Sex"}]
+  }
+]
+
+ },
+
+
+
+}],
+
+"title":{
+  "text":"Ontarians Perception Towards Mental Health",
+    "fontWeight":800,
+
+  "subtitle":["Data from the 2019 Canadian Community Health Survey (CCHS)",
+  "**Values that are 0 indicate missing or inaccurate data"],
+
+  "subtitlePadding":10,
+  "fontSize":20,
+  "subtitleBaseline":"top",
+},
+
+
+"encoding":{
+  y: {field: 'Mental_Health_Perception', type: 'nominal', "title":"Mental Health Perception"},
+  x: {field: 'Values', type: 'quantitative', "stack": "false", "title":"% of Population"},
+  "color":{
+    "field": "Values",
+     "scale": {"scheme": "purples"},
+  }
+
+},
+
+ "layer": [{
+   "mark": {
+        "type": "text",
+        "align": "right",
+        "xOffset": 25,
+        "aria": false
+
+      },
+
+      "encoding": {
+      "text": {"field": "Values", "type": "quantitative"},
+
+    }
+ },
+ {
+"mark":{
+  "type":"bar",
+  "tooltip" : {"field" : "Values"}
+},
+
+
+}]
+
+
+
+//------------------------------------------------>
+}
+//!!!!!!!!!!!!!!!!!!!!!!!put in arc chart
+
+
+      vegaEmbed('#visDiv', dataVis, {})
+    </script>
+    <div>
+      <h4>Link to Dataset <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310061901&pickMembers%5B0%5D=1.7&pickMembers%5B1%5D=2.2">here</a></h4>
+    </br></br>
+      <p><i>Visualization created by <u>Sebastian Frank</u></i></p>
+    </div>
+
+<!-- created by sebastian frank -->
+  </body>
+</html>

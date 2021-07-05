@@ -1,0 +1,26 @@
+[
+{"AgeGroup":"12-17", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender":"Male", "Values":[0,10.7,0,3.8,85.6]},
+{"AgeGroup":"12-17", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender": "Female", "Values":[4.6,12.9,0,7.8,79.3]},
+{"AgeGroup":"12-17", "Mental_Health_Perception": ["MALE needs partially met","MALE all needs met","MALE needs not met","MALE needs partially met or needs not met","MALE no need","FEMALE needs partially met","FEMALE all needs met","FEMALE needs not met","FEMALE needs partially met or needs not met","FEMALE no need"], "Gender": "Both", "Values":[0,10.7,0,3.8,85.6,4.6,12.9,0,7.8,79.3]},
+
+
+{"AgeGroup":"18-34", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender":"Male","Values":[4,7.4,5.8,9.7,82.9]},
+{"AgeGroup":"18-34", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender": "Female", "Values":[7.3,15.2,8,15.3,69.5]},
+{"AgeGroup":"18-34", "Mental_Health_Perception": ["MALE needs partially met","MALE all needs met","MALE needs not met","MALE needs partially met or needs not met","MALE no need","FEMALE needs partially met","FEMALE all needs met","FEMALE needs not met","FEMALE needs partially met or needs not met","FEMALE no need"], "Gender": "Both", "Values":[4,7.4,5.8,9.7,82.9,7.3,15.2,8,15.3,69.5]},
+
+
+{"AgeGroup":"35-49", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender":"Male", "Values":[3.5,7.5,3.2,6.7,85.7]},
+{"AgeGroup":"35-49", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender": "Female",  "Values":[5.8,11.9,4.6,10.3,77.8]},
+{"AgeGroup":"35-49", "Mental_Health_Perception": ["MALE needs partially met","MALE all needs met","MALE needs not met","MALE needs partially met or needs not met","MALE no need","FEMALE needs partially met","FEMALE all needs met","FEMALE needs not met","FEMALE needs partially met or needs not met","FEMALE no need"], "Gender": "Both", "Values":[3.5,7.5,3.2,6.7,85.7,5.8,11.9,4.6,10.3,77.8]},
+
+
+{"AgeGroup":"50-64", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender":"Male", "Values":[2.4,6.5,2.5,4.9,88.6]},
+{"AgeGroup":"50-64", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender": "Female", "Values":[3.7,10.4,3.9,7.5,82]},
+{"AgeGroup":"50-64", "Mental_Health_Perception": ["MALE needs partially met","MALE all needs met","MALE needs not met","MALE needs partially met or needs not met","MALE no need","FEMALE needs partially met","FEMALE all needs met","FEMALE needs not met","FEMALE needs partially met or needs not met","FEMALE no need"], "Gender": "Both", "Values":[2.4,6.5,2.5,4.9,88.6,3.7,10.4,3.9,7.5,82]},
+
+
+{"AgeGroup":"65+", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"], "Gender":"Male", "Values":[0.6,4.3,0.8,1.4,94.4]},
+{"AgeGroup":"65+", "Mental_Health_Perception": ["needs partially met","all needs met","needs not met","needs partially met or needs not met","no need"],  "Gender": "Female", "Values":[1.7,5.4,2.1,3.8,90.8]},
+{"AgeGroup":"65+", "Mental_Health_Perception": ["MALE needs partially met","MALE all needs met","MALE needs not met","MALE needs partially met or needs not met","MALE no need","FEMALE needs partially met","FEMALE all needs met","FEMALE needs not met","FEMALE needs partially met or needs not met","FEMALE no need"], "Gender": "Both", "Values":[0.6,4.3,0.8,1.4,94.4,1.7,5.4,2.1,3.8,90.8]}
+
+]
