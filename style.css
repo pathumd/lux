@@ -218,6 +218,7 @@ button:hover {
     top: 100px;
     left: 1150px;
     animation-name: floating;
+    z-index: -1;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
