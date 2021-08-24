@@ -1237,8 +1237,9 @@ footer {
         transform: scale(0.75);
     }
 
-    .luxpoint1, .luxpoint2, .luxpoint3 {
-        font-size: 16px;
+    .project1info p, .project2info p, .project3info p, .project4info p {
+        color: #2C2C2C;
+        font-size: 17px;
     }
     .project2_container {
         transform: scale(0.75);
