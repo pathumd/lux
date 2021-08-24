@@ -779,6 +779,11 @@ footer {
     .project4_container {
         width: 85%;
     }
+    
+    .project1info p, .project2info p, .project3info p, .project4info p {
+        color: #2C2C2C;
+        font-size: 16px;
+    }
 
     .conclusion_btn {
         position: relative;
@@ -956,6 +961,11 @@ footer {
     .project4_container {
         width: 85%;
     }
+    
+    .project1info p, .project2info p, .project3info p, .project4info p {
+        color: #2C2C2C;
+        font-size: 16px;
+    }
 
     .conclusion_btn {
         position: relative;
@@ -1086,9 +1096,11 @@ footer {
         transform: scale(0.75);
     }
 
-    .luxpoint1, .luxpoint2, .luxpoint3 {
+    .project1info p, .project2info p, .project3info p, .project4info p {
+        color: #2C2C2C;
         font-size: 16px;
     }
+    
     .project2_container {
         transform: scale(0.75);
     }
