@@ -316,30 +316,33 @@ button:hover {
 
 
     /*Project 1*/
-
-.project1info p {
+.project_info {
+    position: relative;
+    width: 100%;
+}
+.projectinfo p {
     color: #2C2C2C;
     font-size: 18px;
 }
 
-.mcmasterlux {
+.project_header h2 {
     padding-bottom: 20px;
-}
-
-.luxpod_header {
     color: #2C2C2C;
     font-size: 35px;
 }
 
-.luxpoint1 {
-    padding-top: 20px;
+.uni_name {
+    padding-bottom: 20px;
 }
 
-.luxpoint2 {
+.point1 p, .point2 p, .point3 p {
+    position: relative;
     padding-top: 20px;
+    color: #2C2C2C;
+    font-size: 18px;
 }
 
-.luxpoint3 {
+.point3 p {
     padding-top: 20px;
     padding-bottom: 60px;
 }
@@ -376,17 +379,16 @@ button:hover {
 }
 
 
-.project1info {
+.projectinfo {
     position: relative;
     left: 45px;
     top: -530px;
 }
 
-.project1_container {
+.project_container {
     overflow: hidden;
     cursor: pointer;
-    width: fit-content;
-    width: -moz-fit-content;
+    width: 60%;
     height: 675px;
     margin: 0 auto;
     border-radius: 30px;
@@ -394,38 +396,11 @@ button:hover {
 
 }
 
-.project1_container:hover {
+.project_container:hover {
     box-shadow: 0 0 15px rgba(33,33,33,.2);
 }
 
-    /*Project 2*/
-
-.project2info p {
-    color: #2C2C2C;
-    font-size: 18px;
-}
-
-.carletonlux {
-    padding-bottom: 20px;
-}
-
-.cad_header {
-    color: #2C2C2C;
-    font-size: 35px;
-}
-
-.cadpoint1 {
-    padding-top: 20px;
-}
-
-.cadpoint2 {
-    padding-top: 20px;
-}
-
-.cadpoint3 {
-    padding-top: 20px;
-    padding-bottom: 60px;
-}
+/*Project 2*/
 
 #viewmore {
     padding: 15px 35px;
@@ -441,128 +416,10 @@ button:hover {
 }
 
 
-.project2info {
-    position: relative;
-
-    left: 45px;
-    top: -530px;
-}
-
-.project2_container {
-    overflow: hidden;
-    cursor: pointer;
-    width: fit-content;
-    width: -moz-fit-content;
-    height: 675px;
-    margin: 0 auto;
-    border-radius: 30px;
-    transition: 0.2s ease-in-out;
-
-}
-
-.project2_container:hover {
-    box-shadow: 0 0 15px rgba(33,33,33,.2);
-}
+/*Project 3*/
 
 
-    /*Project 3*/
-
-.project3info p {
-    color: #2C2C2C;
-    font-size: 18px;
-}
-
-.uottawalux {
-    padding-bottom: 20px;
-}
-
-.minecraft_header {
-    color: #2C2C2C;
-    font-size: 35px;
-}
-
-.mcpoint1 {
-    padding-top: 20px;
-}
-
-.mcpoint2 {
-    padding-top: 20px;
-}
-
-.mcpoint3 {
-    padding-top: 20px;
-    padding-bottom: 60px;
-}
-
-.project3info {
-    position: relative;
-
-    left: 45px;
-    top: -530px;
-}
-
-.project3_container {
-    overflow-y: hidden;
-    cursor: pointer;
-    width: fit-content;
-    width: -moz-fit-content;
-    height: 670px;
-    margin: 0 auto;
-    border-radius: 30px;
-    transition: 0.2s ease-in-out;
-}
-
-.project3_container:hover {
-    box-shadow: 0 0 15px rgba(33,33,33,.2);
-}
-
-
-    /*Project 4*/
-
-    .project4info p {
-        color: #2C2C2C;
-        font-size: 18px;
-    }
-
-    .dv_header {
-        color: #2C2C2C;
-        font-size: 35px;
-    }
-    
-    .dvpoint1 {
-        padding-top: 20px;
-    }
-    
-    .dvpoint2 {
-        padding-top: 20px;
-    }
-    
-    .dvpoint3 {
-        padding-top: 20px;
-        padding-bottom: 60px;
-    }
-    
-    .project4info {
-        position: relative;
-    
-        left: 45px;
-        top: -530px;
-    }
-    
-    .project4_container {
-        overflow-y: hidden;
-        cursor: pointer;
-        width: fit-content;
-        width: -moz-fit-content;
-        height: 670px;
-        margin: 0 auto;
-        border-radius: 30px;
-        transition: 0.2s ease-in-out;
-    }
-    
-    .project4_container:hover {
-        box-shadow: 0 0 15px rgba(33,33,33,.2);
-    }
+/*Project 4*/
 
 
 .divider3 {
@@ -670,6 +527,7 @@ footer {
 
     #join {
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .discord_logo {
@@ -709,21 +567,18 @@ footer {
 
     .first_intro {
         position: relative;
+        width: 100%;
+        text-align: center;
         margin-top: 100px;
-        left: -90px;
     }
 
     .first_intro img {
         display: none;
     }
 
-    .fi_text_container {
-        position: relative;
-        left: 150px;
-    }
-
     .fi_text_container p {
-        font-size: 18px;
+        position: relative;
+        font-size: 16px;
     }
 
     .fi_text_container h2 {
@@ -731,7 +586,7 @@ footer {
     }
 
     .second_intro p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .second_intro h2 {
@@ -742,15 +597,23 @@ footer {
         margin-top: 150px;
     }
 
-    .projects_intro h2 {
+    .project_intro h2 {
         font-size: 30px;
     }
 
-    .projects_intro {
+    .project_intro {
         position: relative;
         margin-top: 180px;
         margin-bottom: 40px;
         padding: 0;
+    }
+
+    .project_header h2 {
+        font-size: 25px;
+    }
+
+    .uni_name p, .point1 p, .point2 p, .point3 p {
+        font-size: 16px;
     }
 
     #spotify {
@@ -762,27 +625,6 @@ footer {
 
     .divider4 {
         height: 60px;
-    }
-  
-    .project1_container {
-        width: 85%;
-    }
-
-    .project2_container {
-        width: 85%;
-    }
-
-    .project3_container {
-        width: 85%;
-    }
-
-    .project4_container {
-        width: 85%;
-    }
-    
-    .project1info p, .project2info p, .project3info p, .project4info p {
-        color: #2C2C2C;
-        font-size: 16px;
     }
 
     .conclusion_btn {
@@ -802,7 +644,7 @@ footer {
     }
 
     .divider5 {
-        height: 0px;
+        height: 50px;
     }
 
     #conclusion_header {
@@ -891,8 +733,9 @@ footer {
 
     .first_intro {
         position: relative;
+        width: 100%;
+        text-align: center;
         margin-top: 100px;
-        left: -90px;
     }
 
     .first_intro img {
@@ -901,7 +744,6 @@ footer {
 
     .fi_text_container {
         position: relative;
-        left: 150px;
     }
 
     .fi_text_container p {
@@ -924,11 +766,11 @@ footer {
         margin-top: 150px;
     }
 
-    .projects_intro h2 {
+    .project_intro h2 {
         font-size: 30px;
     }
 
-    .projects_intro {
+    .project_intro {
         position: relative;
         margin-top: 180px;
         margin-bottom: 40px;
@@ -939,31 +781,23 @@ footer {
         margin-bottom: 30px;
     }
     .divider3 {
-        height: 0px;
+        height: 50px;
     }
 
     .divider4 {
-        height: 60px;
-    }
-  
-    .project1_container {
-        width: 85%;
+        height: 50px;
     }
 
-    .project2_container {
-        width: 85%;
+    .project_container {
+        width: 80%;
     }
 
-    .project3_container {
-        width: 85%;
+
+    .project_header h2 {
+        font-size: 25px;
     }
 
-    .project4_container {
-        width: 85%;
-    }
-    
-    .project1info p, .project2info p, .project3info p, .project4info p {
-        color: #2C2C2C;
+    .uni_name p, .point1 p, .point2 p, .point3 p {
         font-size: 16px;
     }
 
@@ -984,7 +818,7 @@ footer {
     }
 
     .divider5 {
-        height: 0px;
+        height: 50px;
     }
 
     #conclusion_header {
@@ -1080,11 +914,11 @@ footer {
         margin-top: 150px;
     }
 
-    .projects_intro h2 {
+    .project_intro h2 {
         font-size: 30px;
     }
 
-    .projects_intro {
+    .project_intro {
         position: relative;
         margin-top: 180px;
         top: 35px;
@@ -1092,33 +926,20 @@ footer {
         padding: 0;
     }
 
-    .project1_container {
-        transform: scale(0.75);
+    .project_header h2 {
+        font-size: 30px;
     }
 
-    .project1info p, .project2info p, .project3info p, .project4info p {
-        color: #2C2C2C;
+    .uni_name p, .point1 p, .point2 p, .point3 p {
         font-size: 16px;
-    }
-    
-    .project2_container {
-        transform: scale(0.75);
-    }
-
-    .project3_container {
-        transform: scale(0.75);
-    }
-
-    .project4_container {
-        transform: scale(0.75);
     }
 
     .divider3 {
-        height: 0px;
+        height: 100px;
     }
 
     .divider4 {
-        height: 5px;
+        height: 50px;
     }
 
     .conclusion_btn {
@@ -1137,7 +958,7 @@ footer {
     }
 
     .divider5 {
-        height: 0px;
+        height: 100px;
     }
 
     #conclusion_header {
@@ -1233,11 +1054,11 @@ footer {
         margin-top: 150px;
     }
 
-    .projects_intro h2 {
+    .project_intro h2 {
         font-size: 30px;
     }
 
-    .projects_intro {
+    .project_intro {
         position: relative;
         margin-top: 180px;
         top: 35px;
@@ -1245,32 +1066,12 @@ footer {
         padding: 0;
     }
 
-    .project1_container {
-        transform: scale(0.75);
-    }
-
-    .project1info p, .project2info p, .project3info p, .project4info p {
-        color: #2C2C2C;
-        font-size: 17px;
-    }
-    .project2_container {
-        transform: scale(0.75);
-    }
-
-    .project3_container {
-        transform: scale(0.75);
-    }
-
-    .project4_container {
-        transform: scale(0.75);
-    }
-
     .divider3 {
-        height: 0px;
+        height: 100px;
     }
 
     .divider4 {
-        height: 5px;
+        height: 50px;
     }
 
     .conclusion_btn {
@@ -1289,7 +1090,7 @@ footer {
     }
 
     .divider5 {
-        height: 0px;
+        height: 100px;
     }
 
     #conclusion_header {
@@ -1358,27 +1159,15 @@ footer {
         left: 100px;
     }
 
-    .project1_container {
-        transform: scale(0.8);
-    }
-
-    .project2_container {
-        transform: scale(0.8);
-    }
-
-    .project3_container {
-        transform: scale(0.8);
-    }
-
-    .project4_container {
-        transform: scale(0.8);
-    }
-
     .divider3 {
-        height: 0px;
+        height: 100px;
     }
 
     .divider4 {
-        height: 10px;
+        height: 50px;
+    }
+
+    .divider5 {
+        height: 100px;
     }
 }
