@@ -388,7 +388,7 @@ button:hover {
 .project_container {
     overflow: hidden;
     cursor: pointer;
-    width: 60%;
+    width: 85%;
     height: 675px;
     margin: 0 auto;
     border-radius: 30px;
@@ -612,6 +612,10 @@ footer {
         font-size: 25px;
     }
 
+    .project_container {
+        transform: scale(0.9);
+    }
+    
     .uni_name p, .point1 p, .point2 p, .point3 p {
         font-size: 16px;
     }
@@ -792,6 +796,9 @@ footer {
         width: 80%;
     }
 
+    .project_container {
+        transform: scale(0.9);
+    }
 
     .project_header h2 {
         font-size: 25px;
@@ -926,6 +933,10 @@ footer {
         padding: 0;
     }
 
+    .project_container {
+        transform: scale(0.9);
+    }
+
     .project_header h2 {
         font-size: 30px;
     }
@@ -1035,7 +1046,7 @@ footer {
     }
 
     .fi_text_container p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .fi_text_container h2 {
@@ -1043,7 +1054,7 @@ footer {
     }
 
     .second_intro p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .second_intro h2 {
@@ -1060,14 +1071,17 @@ footer {
 
     .project_intro {
         position: relative;
-        margin-top: 180px;
         top: 35px;
         margin-bottom: 0;
         padding: 0;
     }
 
+    .project_container {
+        transform: scale(0.9);
+    }
+
     .divider3 {
-        height: 100px;
+        height: 50px;
     }
 
     .divider4 {
